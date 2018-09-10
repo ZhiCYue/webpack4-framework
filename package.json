@@ -1,0 +1,41 @@
+{
+    "name": "webpack4demo",
+    "version": "1.0.0",
+    "description": "webpack 4",
+    "main": "index.js",
+    "author": "zcyue",
+    "license": "MIT",
+    "scripts": {
+        "server": "node build/build.js local",
+        "local": "webpack-dev-server --mode development --config build/env.local.js",
+        "dev": "webpack --mode development --config build/env.base.js",
+        "prod": "webpack --mode production --config build/env.base.js"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^1.0.0",
+        "file-loader": "^1.1.11",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "less-loader": "^4.1.0",
+        "mini-css-extract-plugin": "^0.4.1",
+        "style-loader": "^0.21.0",
+        "url-loader": "^1.0.1",
+        "vue": "^2.5.17",
+        "vue-loader": "^15.2.6",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^4.16.3",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.3",
+        "webpack-hot-middleware": "^2.22.3",
+        "webpack-merge": "^4.1.4"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.1.0",
+        "postcss-loader": "^2.1.6"
+    }
+}
